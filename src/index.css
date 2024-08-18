@@ -1,13 +1,30 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-image {
+    width: 50px; /* Điều chỉnh chiều rộng của logo nếu cần */
+    height: auto; /* Giữ tỷ lệ khung hình của logo */
+  }
+  
+  .logo-text {
+    margin-left: 8px; /* Khoảng cách giữa logo và chữ */
+  }
+  
+  
